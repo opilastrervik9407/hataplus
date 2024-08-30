@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+hr {
+    border-top: 1px solid #e4e4e4;
+    margin-bottom: 33px;
+    margin-top: 36px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-menu {
+    font-family: "Arial";
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 1.7em;
+    transition: all 0.5s ease;
+}
+
+.nav-menu :hover {
+    color: #fd8300;
+    transition: all 0.5s ease;
+}
+
+
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.flex-between {
+    justify-content: space-between;
+    display: flex;
+}
+
+.top-menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.top-line {
+    background-color: #1f1f56;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.nav-menu {
+    column-gap: 25px;
+    padding: 0px;
+}
+
+.nav-menu a {
+    color: #b1b1d2;
+    text-decoration: none;
+}
+
+.faforits {
+    align-items: center;
+    column-gap: 25px;
+}
+
+.logo-contacts {
+    align-items: center;
+    padding: 36px 0;
+}
+
+.logo-contacts a {
+    font-size: 18px;
+    line-height: 1.3em;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.hataplus-email {
+    text-decoration: underline;
+}
+
+.klick {
+    display: inline-block;
+    border-radius: 25px;
+    background-color: #ffffff;
+    border: 2px solid #fd8300;
+    padding: 12px 19px;
+    transition: all 0.5s ease;
+}
+
+.klick:hover {
+    background-color: #fd8300;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.backround {
+    background: url(../img/backround.webp) no-repeat center/cover;
+    width: 100%;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.backround p {
+    margin: 0;
+}
+
+.line {
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab"
+
+}
+
+p.text {
+    margin: 12px 0;
+    font-size: 14px;
+    line-height: 1.7em;
+    color: #ffffff;
+    font-family: "Arial";
+}
+
+.price {
+    font-size: 40px;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.price span {
+    font-size: 24px;
+    line-height: 1em;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.parent {
+    max-width: 714px;
+    margin: 0;
+
+}
+
+.campanie h1 {
+    margin-bottom: 27px;
+    font-size: 30px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.campanie {
+    color: #24242b;
+    font-weight: bold;
+    font-family: "Roboto Slab";
+    margin-right: 80px;
+}
+
+.campanie p {
+    font-size: 14px;
+    line-height: 1.7em;
+    color: #666666;
+    font-family: "Arial";
+    margin-bottom: 21px;
+}
+
+.campanie a {
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.houses {
+    column-gap: 24px;
+    max-width: 713px;
+    width: 100%;
+    margin-bottom: 47px;
+}
+
+.houses p {
+    color: #9999a6;
+    font-family: "Arial";
+    font-size: 13px;
+    line-height: 1.3em;
+}
+
+
+.populare p {
+    margin-bottom: 31px;
+}
+
+.houses h2:hover{
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+
+.houses h2 {
+    font-size: 13px;
+    line-height: 1.3em;
+    padding-top: 10px;
+    margin-bottom: 7px;
+    color: #1f1f56;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.houses_block {
+    font-size: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.populare p{
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.main-parent{
+    padding: 38px 0px 0px 0px;
+}
+
+.contactsphone2{
+    font-size: 16px;
+    text-align: right;
+}
+
+.contactsphone2,
+.contactsphone{
+    padding: 0 0 0 12px;
+}
+
+.number a,
+.hataplus-email {
+    display: block;
+    position: relative;
+    padding: 0px 0px 12px;
+}
+
+.number a::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #1f1f56;
+    transition: all 1s ease;
+}
+
+.number p:hover>a::before {
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.title-menu{
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.title {
+    padding: 10.5px 16px;
+    color: #ffffff;
+    background-color: #1f1f56;
+    font-size: 16px;
+    line-height: 1.5em;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-align: left;
+}
+
+.catogoria {
+    background-color: #ededf5;
+}
+
+.catogoria a {
+    display: block;
+    padding: 10.5px 16px;
+    border-radius: 3px;
+    color: #25252c;
+    text-decoration: none;
+    border-top: 1px solid #dcdce6;
+    transition: all 0.5s ease;
+}
+
+
+.catogoria a:hover {
+    background-color: #fd8300;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.catogoria img {
+    display: flex;
+}
+
+.catogoria {
+    min-width: 215px;
+    font-size: 14px;
+    line-height: 1.7em;
+    color: #25252c;
+    font-family: "Arial";
+
+}
+
+.hiddenmenu {
+    display: none;
+    width: 100%;
+    
+}
+
+.hiddenmenu li :hover {
+    background-color: #9999a6;
+    color: #666666;
+    transition: all 0.5s ease;
+}
+
+.hiddenmenu li {
+    padding: 0;
+    background-color: #cecedd;
+    border: 1px solid #cecedd;
+    margin: 0;
+    border-top: none;
+}
+
+.hiddenmenu a {
+    padding-left: 30px;
+    color: #666666;
+    border-top: none;
+}
+
+.catogoria li:hover>.hiddenmenu {
+    display: block;
+}
+
+.footer {
+    background-color: #ededf5;
+    justify-content: space-between;
+    font-family: "Arial";
+    justify-content: space-around;
+}
+
+.contact-footer {
+    padding: 42px 0 29px;
+}
+
+.faforits {
+    font-size: 14px;
+    line-height: 1.8em;
+    color: #666666;
+    font-family: "Arial";
+    transition: all 0.5s ease;
+}
+
+.faforits :hover {
+    color: #fd8300;
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+
+.menu-center {
+    display: flex;
+}
+
+.center a {
+    font-size: 14px;
+    line-height: 1.8em;
+    color: #666666;
+    font-family: "Arial";
+    transition: all 0.5s ease;
+}
+
+.center li:hover a{
+    color: #fd8300;
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+
+.contactsphone3{
+    transition: all 0.5s ease;
+}
+
+.contactsphone3 :hover {
+    color: #fd8300;
+    transition: all 0.5s ease;
+}
+
+.contactsphone3 a {
+    color: #25252c;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.contactsphone3 p {
+    padding: 5px 10px;
+    text-align: right;
+    transition: all 0.5s ease;
+}
+
+
+.contats-menu3 :hover {
+    color: #fd8300;
+    transition: all 0.5s ease;
+}
+
+.contats-menu a {
+    font-size: 16px;
+    line-height: 1.5em;
+    text-decoration: underline;
+    color: #25252c;
+    font-family: "Arial";
+}
+
+.skype a {
+    text-decoration: none;
+}
+
+.end-footer {
+    background-color: #dcdce6;
+    display: flex;
+    text-align: center;
+    color: #9999a6;
+    font-family: "Arial";
+    justify-content: center;
+}
+
+.end-footer {
+    align-items: center;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    font-family: "Arial";
+    height: 45px;
+    background-color: #dcdce6;
+}
+
+
