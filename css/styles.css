@@ -228,14 +228,14 @@ p.text {
 }
 
 .houses_block {
-    font-size: 24px;
+    padding-bottom: 31px;
     color: #24242b;
     font-weight: 700;
-    font-family: "Roboto Slab";
+    font-family: "Roboto Slab";font-size: 24px;
+    line-height: 24px;
 }
 
 .populare p{
-    font-size: 24px;
     line-height: 24px;
     color: #24242b;
     font-weight: 700;
