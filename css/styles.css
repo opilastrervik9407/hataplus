@@ -298,11 +298,12 @@ p.text {
 
 .catogoria {
     background-color: #ededf5;
+    padding: 5.5px 3px;
 }
 
 .catogoria a {
     display: block;
-    padding: 10.5px 16px;
+    padding: 10.5px 5px;
     border-radius: 3px;
     color: #25252c;
     text-decoration: none;
@@ -322,13 +323,18 @@ p.text {
 }
 
 .catogoria {
-    min-width: 215px;
+    min-width: 200px;
     font-size: 14px;
     line-height: 1.7em;
     color: #25252c;
     font-family: "Arial";
 
 }
+
+.title-menu{
+    display: flex;
+    justify-content: flex-end;
+ }
 
 .hiddenmenu {
     display: none;
