@@ -467,4 +467,25 @@ p.text {
     background-color: #dcdce6;
 }
 
+.contacts_phone img {
+    position: relative;
+    width: 16gipx;
+    height: 16px;
+    border-radius: 3px;
+    background-color: yellow;
+    transition: all 1s ease;
+}
 
+.contacts_phone img :hover:before{
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(135deg) ;
+    transition: all 1s ease;
+}
+
+img:hover{
+    background-color: lightblue;
+    transition: all 1s ease;
+}
