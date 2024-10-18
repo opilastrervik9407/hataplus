@@ -391,11 +391,11 @@ p.text {
     transition: all 0.5s ease;
 }
 
-.menu-center {
+.item{
     display: flex;
 }
 
-.center a {
+.item a {
     font-size: 14px;
     line-height: 1.8em;
     color: #666666;
@@ -403,40 +403,40 @@ p.text {
     transition: all 0.5s ease;
 }
 
-.center li:hover a{
+.item li:hover a{
     color: #fd8300;
     text-decoration: underline;
     transition: all 0.5s ease;
 }
 
-.contactsphone3{
+.contacts_phone{
     transition: all 0.5s ease;
 }
 
-.contactsphone3 :hover {
+.contacts_phone:hover {
     color: #fd8300;
     transition: all 0.5s ease;
 }
 
-.contactsphone3 a {
+.contacts_phone a {
     color: #25252c;
     font-weight: bold;
     padding: 5px;
 }
 
-.contactsphone3 p {
+.contacts_phone p {
     padding: 5px 10px;
     text-align: right;
     transition: all 0.5s ease;
 }
 
 
-.contats-menu3 :hover {
+.mail :hover {
     color: #fd8300;
     transition: all 0.5s ease;
 }
 
-.contacts-menu a {
+.mail a {
     font-size: 16px;
     line-height: 1.5em;
     text-decoration: underline;
@@ -444,7 +444,7 @@ p.text {
     font-family: "Arial";
 }
 
-.skype a {
+.mail a {
     text-decoration: none;
 }
 
