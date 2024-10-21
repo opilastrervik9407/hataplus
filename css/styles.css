@@ -413,7 +413,7 @@ p.text {
     transition: all 0.5s ease;
 }
 
-.contacts_phone:hover {
+.contacts_phone :hover {
     color: #fd8300;
     transition: all 0.5s ease;
 }
@@ -437,15 +437,13 @@ p.text {
 }
 
 .mail a {
+    display: flex;
     font-size: 16px;
     line-height: 1.5em;
     text-decoration: underline;
     color: #25252c;
     font-family: "Arial";
-}
-
-.mail a {
-    text-decoration: none;
+    text-align: right;
 }
 
 .end-footer {
@@ -469,11 +467,12 @@ p.text {
 
 .contacts_phone img {
     position: relative;
-    width: 16gipx;
+    width: 16px;
     height: 16px;
     border-radius: 3px;
     background-color: yellow;
     transition: all 1s ease;
+    margin:0px 12px 0 0;
 }
 
 .contacts_phone img :hover:before{
@@ -488,4 +487,63 @@ p.text {
 img:hover{
     background-color: lightblue;
     transition: all 1s ease;
+}
+
+
+.mail_contacts img {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: yellow;
+    transition: all 1s ease;
+    margin:3px 14px 0 0;
+}
+
+
+.mail_contacts img :hover:before{
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(135deg) ;
+    transition: all 1s ease;
+}
+
+
+.skype_contacts img{
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: yellow;
+    transition: all 1s ease;
+    margin:3px 14px 0 0;
+}
+
+.skype_contacts img :hover::before{
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(135deg) ;
+    transition: all 1s ease;
+}
+
+
+img:hover{
+    background-color: lightblue;
+    transition: all 1s ease;
+}
+
+.skype a{
+    font-size: 16px;
+    line-height: 24px;
+    color: #25252c;
+     font-family: "Arial";
+}
+
+.skype :hover{
+    color: #fd8300;
+    transition: all 0.5s ease;
 }
