@@ -253,6 +253,10 @@ p.text {
     text-align: right;
 }
 
+.contactphone{
+    position: relative;
+}
+
 .contactsphone2,
 .contactsphone{
     padding: 0 0 0 12px;
@@ -431,21 +435,6 @@ p.text {
 }
 
 
-.mail :hover {
-    color: #fd8300;
-    transition: all 0.5s ease;
-}
-
-.mail a {
-    display: flex;
-    font-size: 16px;
-    line-height: 1.5em;
-    text-decoration: underline;
-    color: #25252c;
-    font-family: "Arial";
-    text-align: right;
-}
-
 .end-footer {
     background-color: #dcdce6;
     display: flex;
@@ -465,85 +454,62 @@ p.text {
     background-color: #dcdce6;
 }
 
-.contacts_phone img {
-    position: relative;
+.contacts_tel{
+  position: relative;
+}
+
+.contacts_tel::before,
+.contactphone::before{
+    content:"";
+    background-image:url(../img/phone.png);
     width: 16px;
     height: 16px;
-    border-radius: 3px;
-    background-color: yellow;
-    transition: all 1s ease;
-    margin:0px 12px 0 0;
+    position:absolute;
+    display: flex;
+    left: -25px;
 }
 
-.contacts_phone img :hover:before{
-    content: "";
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%) rotate(135deg) ;
-    transition: all 1s ease;
-}
-
-img:hover{
-    background-color: lightblue;
-    transition: all 1s ease;
-}
-
-
-.mail_contacts img {
+.mail_contacts{
     position: relative;
-    width: 16px;
-    height: 16px;
-    border-radius: 3px;
-    background-color: yellow;
-    transition: all 1s ease;
-    margin:3px 14px 0 0;
 }
 
+.mail_contacts {
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+   color: #25252c;
+   font-family: "Arial";
+}
 
-.mail_contacts img :hover:before{
-    content: "";
+.mail_contacts::before{
+    content:"";
+    background-image: url(../img/mail.png);
+    width: 19px;
+    height: 13px;
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%) rotate(135deg) ;
-    transition: all 1s ease;
+    display: flex;
+    left: -25px;
+    top: 20%;
 }
 
-
-.skype_contacts img{
+.skype_contacts{
     position: relative;
-    width: 16px;
-    height: 16px;
-    border-radius: 3px;
-    background-color: yellow;
-    transition: all 1s ease;
-    margin:3px 14px 0 0;
 }
 
-.skype_contacts img :hover::before{
-    content: "";
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%) rotate(135deg) ;
-    transition: all 1s ease;
-}
-
-
-img:hover{
-    background-color: lightblue;
-    transition: all 1s ease;
-}
-
-.skype a{
+.skype_contacts {
     font-size: 16px;
     line-height: 24px;
     color: #25252c;
-     font-family: "Arial";
+    font-family: "Arial";
 }
 
-.skype :hover{
-    color: #fd8300;
-    transition: all 0.5s ease;
+.skype_contacts::before{
+    content:"";
+    background-image: url(../img/skype.png);
+    width: 17px;
+    height: 20px;
+    position: absolute;
+    display: flex;
+    left: -25px;
 }
+
