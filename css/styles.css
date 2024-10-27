@@ -257,7 +257,7 @@ p.text {
     position: relative;
 }
 
-.contactsphone2,
+.contact   phone2,
 .contactsphone{
     padding: 0 0 0 12px;
 }
@@ -481,6 +481,12 @@ p.text {
    font-family: "Arial";
 }
 
+
+.contactphone2{
+    position: relative;
+}
+
+.contactphone2::before,
 .mail_contacts::before{
     content:"";
     background-image: url(../img/mail.png);
@@ -503,6 +509,11 @@ p.text {
     font-family: "Arial";
 }
 
+.contactsphone{
+    position: relative;
+}
+
+.contactsphone::before,
 .skype_contacts::before{
     content:"";
     background-image: url(../img/skype.png);
