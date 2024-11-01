@@ -257,11 +257,6 @@ p.text {
     position: relative;
 }
 
-.contact   phone2,
-.contactsphone{
-    padding: 0 0 0 12px;
-}
-
 .number a,
 .hataplus-email {
     display: block;
