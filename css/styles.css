@@ -311,6 +311,27 @@ p.text {
     transition: all 0.5s ease;
 }
 
+.catogoria > li > a{
+    position: relative;
+    display: block;
+    color: #666666;
+    padding: 10px 6px;
+}
+
+.catogoria > li > a::before{
+    content:" ";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    border-top: 1.5px solid #666666;
+    border-right: 1.5px solid #666666;
+    transform: translateY(-50%) rotate(45deg);
+    transition: all 5s easeg;
+}
+
+
 .catogoria a:hover {
     background-color: #fd8300;
     color: #ffffff;
