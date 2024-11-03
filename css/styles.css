@@ -323,19 +323,30 @@ p.text {
     position: absolute;
     top: 50%;
     right: 20px;
-    width: 10px;
-    height: 10px;
+    width: 6px;
+    height: 6px;
     border-top: 1.5px solid #666666;
     border-right: 1.5px solid #666666;
     transform: translateY(-50%) rotate(45deg);
-    transition: all 5s easeg;
+    transition: all 5s ease;
 }
 
 
-.catogoria a:hover {
+.catogoria li :hover {
     background-color: #fd8300;
     color: #ffffff;
     transition: all 0.5s ease;
+}
+
+.catogoria > li:hover > a::before{
+    top: 50%;
+    right: 20px;
+    width: 6px;
+    height: 6px;
+    border-top: 1.5px solid #ffffff;
+    border-right: 1.5px solid #ffffff;
+    background-color: #ffffff;
+    transform: translateY(-50%) rotate(135deg);
 }
 
 .catogoria img {
