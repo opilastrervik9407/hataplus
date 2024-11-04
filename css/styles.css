@@ -339,7 +339,7 @@ p.text {
 }
 
 .catogoria > li:hover > a:before{
-    background-color: #ffffff;
+    border-color: #ffffff;
     transform: translateY(-50%) rotate(135deg);
 }
 
