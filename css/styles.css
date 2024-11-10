@@ -471,6 +471,14 @@ p.text {
     padding: 5px;
 }
 
+.contactphone a{
+  display: block;
+  width: 17px;
+  height: 17px;
+  background: url(../img/telefon.png) no-repeat;
+  display: flex;
+}
+
 .contacts_phone p {
     padding: 5px 10px;
     text-align: right;
@@ -504,7 +512,6 @@ p.text {
 .contacts_tel::before,
 .contactphone::before{
     content:"";
-    background-image:url(../img/phone.png);
     width: 16px;
     height: 16px;
     position:absolute;
