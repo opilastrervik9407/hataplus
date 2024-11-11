@@ -471,12 +471,23 @@ p.text {
     padding: 5px;
 }
 
-.contactphone a{
+.contactphone::before{
+    content: "";
+    position: relative;
+}
+
+.contactphone a::before{
+  left: -25px;
+  content:"";
+  position: absolute;
   display: block;
   width: 17px;
   height: 17px;
   background: url(../img/telefon.png) no-repeat;
-  display: flex;
+}
+
+a.contactphone{
+    background-position: 11px;
 }
 
 .contacts_phone p {
@@ -509,9 +520,9 @@ p.text {
   position: relative;
 }
 
-.contacts_tel::before,
-.contactphone::before{
+.contacts_tel::before{
     content:"";
+    background: url(../img/phone.png);
     width: 16px;
     height: 16px;
     position:absolute;
@@ -536,7 +547,24 @@ p.text {
     position: relative;
 }
 
-.contactphone2::before,
+.email{
+    position: relative;
+}
+
+.email a::before{
+    content: "";
+    position: absolute;
+    left: -25px;
+    display: block;
+    width: 25px;
+    height: 20px;
+    background: url(../img/emalito.png) no-repeat;
+}
+
+a.email{
+    background-position: 3px;
+}
+
 .mail_contacts::before{
     content:"";
     background-image: url(../img/mail.png);
