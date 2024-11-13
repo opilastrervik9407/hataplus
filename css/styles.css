@@ -587,11 +587,10 @@ a.email{
     font-family: "Arial";
 }
 
-.contactsphone{
+.contactphone{
     position: relative;
 }
 
-.contactsphone::before,
 .skype_contacts::before{
     content:"";
     background-image: url(../img/skype.png);
@@ -602,3 +601,20 @@ a.email{
     left: -25px;
 }
 
+.skypia{
+    position: relative;
+}
+
+.skypia a::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url(../img/skypia.png) no-repeat;
+    left: -25px;
+}
+
+a.skypia{
+    background-position: 00;
+}
