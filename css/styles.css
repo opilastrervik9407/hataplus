@@ -36,7 +36,6 @@ ul{
 
 .nav-menu :hover {
     color: #fd8300;
-    transition: all 0.5s ease;
 }
 
 .wrapper {
@@ -82,24 +81,39 @@ ul{
 
 .faforits-soicial a{
     display: block;
-    width: 20px;
-    height: 20px;
     background: url(../img/sprite.png) no-repeat;
+    transition: all 0.25s ease;
 }
 
 a.fb{
-    background-position: -75px 0;
+    background-position: -1px -2px;
     width: 11px;
+    height: 19px;
 }
 
 a.tw{
-    background-position: -89px -2px;
+    background-position: -14px -2px;
     height: 16px;
+    width: 19px;
 }
 
 
 a.in{
-background-position: -113px 0;
+    background-position: -35px -2px;
+    width: 20px;
+    height: 20px;
+}
+
+a.fb:hover{
+    background-position: -2px -23px;
+}
+
+a.tw:hover{
+    background-position: -15px -23px;
+}
+
+a.in:hover{
+    background-position: -36px -23px;
 }
 
 .logo-contacts {
@@ -131,7 +145,6 @@ background-position: -113px 0;
 .klick:hover {
     background-color: #fd8300;
     color: #ffffff;
-    transition: all 0.5s ease;
 }
 
 .backround {
@@ -238,7 +251,6 @@ p.text {
 
 .houses h2:hover{
     text-decoration: underline;
-    transition: all 0.5s ease;
 }
 
 .houses h2 {
@@ -357,7 +369,6 @@ p.text {
 .catogoria > li:hover > a{
     background-color: #fd8300;
     color: #ffffff;
-    transition: all .5s ease;
 }
 
 .catogoria > li:hover > a:before{
@@ -432,12 +443,6 @@ p.text {
     transition: all 0.5s ease;
 }
 
-.faforits :hover {
-    color: #fd8300;
-    text-decoration: underline;
-    transition: all 0.5s ease;
-}
-
 .item{
     display: flex;
 }
@@ -453,7 +458,6 @@ p.text {
 .item li:hover a{
     color: #fd8300;
     text-decoration: underline;
-    transition: all 0.5s ease;
 }
 
 .contacts_phone{
@@ -462,7 +466,6 @@ p.text {
 
 .contacts_phone :hover {
     color: #fd8300;
-    transition: all 0.5s ease;
 }
 
 .contacts_phone a {
@@ -471,23 +474,19 @@ p.text {
     padding: 5px;
 }
 
-.contactphone::before{
-    content: "";
+.contactphone{
     position: relative;
 }
 
-.contactphone a::before{
+.contactsphone::before{
   left: -25px;
   content:"";
   position: absolute;
   display: block;
-  width: 17px;
-  height: 17px;
-  background: url(../img/telefon.png) no-repeat;
-}
-
-a.contactphone{
-    background-position: 11px;
+  width: 19px;
+  height: 19px;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -76px -2px;
 }
 
 .contacts_phone p {
