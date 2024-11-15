@@ -474,19 +474,22 @@ p.text {
     padding: 5px;
 }
 
-.contactphone{
+.number1{
     position: relative;
 }
 
 .contactsphone::before{
-  left: -25px;
   content:"";
+  left: -25px;
   position: absolute;
   display: block;
-  width: 19px;
+  width: 18px;
   height: 19px;
-  background: url(../img/sprite.png) no-repeat;
-  background-position: -76px -2px;
+  background: url(../img/sprites.png.) no-repeat;
+}
+
+a.contactsphone{
+background-position: -2px -2px;
 }
 
 .contacts_phone p {
