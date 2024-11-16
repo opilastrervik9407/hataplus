@@ -121,14 +121,6 @@ a.in:hover{
     padding: 36px 0;
 }
 
-.logo-contacts a {
-    font-size: 18px;
-    line-height: 1.3em;
-    color: #25252c;
-    font-weight: bold;
-    font-family: "Arial";
-}
-
 .hataplus-email {
     text-decoration: underline;
 }
@@ -282,18 +274,35 @@ p.text {
     padding: 38px 0px 0px 0px;
 }
 
-.contactsphone2{
+.number{
     font-size: 16px;
     text-align: right;
 }
 
-.contactphone{
+.logo-contacts a {
+    font-size: 18px;
+    line-height: 1.3em;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.number1{
     position: relative;
+}
+
+a.skypelito::before{
+  content:"";
+  left: -25px;
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 19px;
+  background: url(../img/skypia.png) no-repeat;
 }
 
 .number a,
 .hataplus-email {
-    display: block;
     position: relative;
     padding: 0px 0px 12px;
 }
@@ -312,6 +321,34 @@ p.text {
 .number p:hover>a::before {
     width: 100%;
     transition: all 0.5s ease;
+}
+
+.contactphone2::before{
+    content: "";
+    position: absolute;
+    left: -25px;
+    display: block;
+    width: 25px;
+    height: 20px;
+    background: url(../img/emalito.png);
+}
+
+a.contactphone2{
+    background-position: -40px -2px;
+}
+
+.number{
+    position: relative;
+}
+
+.number a::before{
+    content: "";
+    position: absolute;
+    left: -25px;
+    display: block;
+    width: 25px;
+    height: 20px;
+    background: url(../img/phone.pngit) no-repeat;
 }
 
 .title-menu{
@@ -474,23 +511,7 @@ p.text {
     padding: 5px;
 }
 
-.number1{
-    position: relative;
-}
 
-.contactsphone::before{
-  content:"";
-  left: -25px;
-  position: absolute;
-  display: block;
-  width: 18px;
-  height: 19px;
-  background: url(../img/sprites.png.) no-repeat;
-}
-
-a.contactsphone{
-background-position: -2px -2px;
-}
 
 .contacts_phone p {
     padding: 5px 10px;
@@ -544,10 +565,6 @@ background-position: -2px -2px;
    font-family: "Arial";
 }
 
-
-.contactphone2{
-    position: relative;
-}
 
 .email{
     position: relative;
