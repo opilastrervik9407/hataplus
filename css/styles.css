@@ -274,7 +274,7 @@ p.text {
     padding: 38px 0px 0px 0px;
 }
 
-.number{
+.numberito{
     font-size: 16px;
     text-align: right;
 }
@@ -287,68 +287,63 @@ p.text {
     font-family: "Arial";
 }
 
-.number1{
+.contacts_tel,
+.tell-me{
     position: relative;
 }
 
-a.skypelito::before{
-  content:"";
-  left: -25px;
-  position: absolute;
-  display: block;
-  width: 18px;
-  height: 19px;
-  background: url(../img/skypia.png) no-repeat;
-}
-
-.number a,
-.hataplus-email {
-    position: relative;
-    padding: 0px 0px 12px;
-}
-
-.number a::before {
+.contacts_tel::before,
+.tell-me::before {
     content: "";
+    display: block;
     position: absolute;
-    bottom: 10px;
-    left: 0;
-    height: 2px;
-    width: 0%;
-    background-color: #1f1f56;
-    transition: all 1s ease;
+    left: -25px;
+    top: 2;
+    height: 16px;
+    width: 18px;
+    background: url(../img/sprite.png) no-repeat;
+    background-position: -98px -2px;
 }
 
-.number p:hover>a::before {
+.tell-me:hover>a::before {
     width: 100%;
-    transition: all 0.5s ease;
 }
 
+.contactphone2,
+.mail_contacts
+{
+    position: relative;
+}
+
+.mail_contacts::before,
 .contactphone2::before{
     content: "";
+    display: block;
     position: absolute;
     left: -25px;
-    display: block;
-    width: 25px;
-    height: 20px;
-    background: url(../img/emalito.png);
+    top: 2px;
+    height: 14px;
+    width: 20px;
+    background: url(../img/sprite.png) no-repeat;
+    background-position: -57px -1px;
 }
 
-a.contactphone2{
-    background-position: -40px -2px;
-}
-
-.number{
+.skype_contacts,
+.skypelito{
     position: relative;
-}
+} 
 
-.number a::before{
+.skype_contacts::before,
+.skypelito::before{
     content: "";
+    display: block;
     position: absolute;
     left: -25px;
-    display: block;
-    width: 25px;
-    height: 20px;
-    background: url(../img/phone.pngit) no-repeat;
+    top: 0px;
+    width: 22px;
+    height: 22px;
+    background: url(../img/sprite.png) no-repeat;
+    background-position: -76px -2px;
 }
 
 .title-menu{
@@ -539,20 +534,6 @@ a.contactphone2{
     background-color: #dcdce6;
 }
 
-.contacts_tel{
-  position: relative;
-}
-
-.contacts_tel::before{
-    content:"";
-    background: url(../img/phone.png);
-    width: 16px;
-    height: 16px;
-    position:absolute;
-    display: flex;
-    left: -25px;
-}
-
 .mail_contacts{
     position: relative;
 }
@@ -565,36 +546,6 @@ a.contactphone2{
    font-family: "Arial";
 }
 
-
-.email{
-    position: relative;
-}
-
-.email a::before{
-    content: "";
-    position: absolute;
-    left: -25px;
-    display: block;
-    width: 25px;
-    height: 20px;
-    background: url(../img/emalito.png) no-repeat;
-}
-
-a.email{
-    background-position: 3px;
-}
-
-.mail_contacts::before{
-    content:"";
-    background-image: url(../img/mail.png);
-    width: 19px;
-    height: 13px;
-    position: absolute;
-    display: flex;
-    left: -25px;
-    top: 20%;
-}
-
 .skype_contacts{
     position: relative;
 }
@@ -604,20 +555,6 @@ a.email{
     line-height: 24px;
     color: #25252c;
     font-family: "Arial";
-}
-
-.contactphone{
-    position: relative;
-}
-
-.skype_contacts::before{
-    content:"";
-    background-image: url(../img/skype.png);
-    width: 17px;
-    height: 20px;
-    position: absolute;
-    display: flex;
-    left: -25px;
 }
 
 .skypia{
