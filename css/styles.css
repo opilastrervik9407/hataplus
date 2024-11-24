@@ -56,13 +56,12 @@ ul{
 }
 
 .header {
-    background-color: #1f1f56;
     position: fixed;
     top: 0;
     width: 100%;
     padding: 10px;
+    background-color: #1f1f56;
     box-sizing: border-box;
-    border: 1px solid  #1f1f56;
     z-index: 1;
 }
 
