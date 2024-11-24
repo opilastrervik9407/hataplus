@@ -62,6 +62,8 @@ ul{
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
+    border: 1px solid  #1f1f56;
+    z-index: 1;
 }
 
 .nav-menu {
@@ -84,6 +86,7 @@ ul{
 }
 
 .faforits-soicial a{
+    background-color: #1f1f56;
     display: block;
     background: url(../img/sprite.png) no-repeat;
     transition: all 0.25s ease;
