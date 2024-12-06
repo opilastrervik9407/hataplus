@@ -423,6 +423,11 @@ figcaption>a:hover~picture img {
     font-weight: 700;
     font-family: "Roboto Slab";
     text-align: left;
+    transition: all 0.5s ease;
+}
+
+.title :hover{
+    color: #fd8300;
 }
 
 .catogoria {
