@@ -437,13 +437,8 @@ figcaption>a:hover~h2{
     transition: all 0.5s ease;
 }
 
-.title :hover{
-    color: #fd8300;
-}
-
-.catogoria {
+.catogoria li {
     background-color: #ededf5;
-    padding: 5.5px 3px;
 }
 
 .catogoria a {
@@ -496,12 +491,12 @@ figcaption>a:hover~h2{
 }
 
 .catogoria {
-    min-width: 200px;
+    min-width: 220px;
     font-size: 14px;
     line-height: 1.7em;
     color: #25252c;
     font-family: "Arial";
-
+   min-height: 45px;
 }
 
 .title-menu {
@@ -516,15 +511,14 @@ figcaption>a:hover~h2{
 }
 
 .hiddenmenu li :hover {
-    background-color: #9999a6;
+    background-color: #cecedd;
     color: #666666;
     transition: all 0.5s ease;
 }
 
-.hiddenmenu li {
+.parent-sub li+li {
+    border: none;
     padding: 0;
-    background-color: #cecedd;
-    border: 1px solid #cecedd;
     margin: 0;
     border-top: none;
 }
