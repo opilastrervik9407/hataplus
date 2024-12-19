@@ -66,6 +66,7 @@ ul {
 
 .nav-menu :hover {
     color: #fd8300;
+    transition: all 0.5s ease;
 }
 
 .wrapper {
@@ -241,7 +242,6 @@ p.text {
 .campanie {
     color: #24242b;
     font-family: "Roboto Slab";
-    margin-right: 28px;
 }
 
 .campanie p {
@@ -265,7 +265,7 @@ p.text {
     column-gap: 24px;
     max-width: 713px;
     width: 100%;
-    margin-bottom: 47px;
+    margin-bottom: 24px;
 }
 
 .houses p {
@@ -289,12 +289,10 @@ margin-bottom: 9px;
     padding-top: 10px;
     margin-bottom: 7px;
     color: #1f1f56;
-    font-weight: bold;
     font-family: "Arial";
 }
 
 .houses_block {
-    padding-bottom: 31px;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -354,7 +352,19 @@ figcaption>a:hover~h2{
     right: -30px;
  }
 
-.logo-contacts a {
+.number1 a{
+    font-size: 16px;
+    line-height: 24px;
+    color: #25252c;
+    font-family: "Arial";
+}
+
+.contactphone2{
+    text-decoration: underline;
+}
+
+.numberito a,
+.klick {
     font-size: 16px;
     line-height: 24px;
     color: #25252c;
@@ -374,8 +384,8 @@ figcaption>a:hover~h2{
     position: absolute;
     left: -25px;
     top: 2;
-    height: 16px;
-    width: 18px;
+    height: 19px;
+    width: 22px;
     background: url(../img/sprite.png) no-repeat;
     background-position: -98px -2px;
 }
@@ -396,7 +406,7 @@ figcaption>a:hover~h2{
     position: absolute;
     left: -25px;
     top: 2px;
-    height: 14px;
+    height: 16px;
     width: 20px;
     background: url(../img/sprite.png) no-repeat;
     background-position: -57px -1px;
@@ -420,10 +430,11 @@ figcaption>a:hover~h2{
     background-position: -76px -2px;
 }
 
-.title-menu {
+.catogoria{
     border-radius: 3px;
     overflow: hidden;
 }
+
 
 .title {
     padding: 10.5px 16px;
@@ -443,8 +454,7 @@ figcaption>a:hover~h2{
 
 .catogoria a {
     display: block;
-    padding: 10.5px 5px;
-    border-radius: 3px;
+    padding: 10.5px 16px;
     color: #25252c;
     text-decoration: none;
     transition: all 0.5s ease;
@@ -453,8 +463,6 @@ figcaption>a:hover~h2{
 .catogoria>li>a {
     position: relative;
     display: block;
-    color: #666666;
-    padding: 10px 6px;
 }
 
 .catogoria>li>a::before {
@@ -540,7 +548,7 @@ figcaption>a:hover~h2{
     justify-content: space-around;
 }
 
-.block_menu li:hover{
+.block_menu a:hover{
     color: #fd8300;
     text-decoration: underline;
     transition: all 0.5s ease;
