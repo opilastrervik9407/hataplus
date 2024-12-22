@@ -261,11 +261,16 @@ p.text {
     font-family: "Arial";
 }
 
+.campanie a:hover{
+    color: #666666;
+    text-decoration: underline;
+}
+
 .houses {
     column-gap: 24px;
     max-width: 713px;
     width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 50px;
 }
 
 .houses p {
@@ -435,6 +440,9 @@ figcaption>a:hover~h2{
     overflow: hidden;
 }
 
+.title-menu p{
+    border-radius: 3px 3px 0px 0px;
+}
 
 .title {
     padding: 10.5px 16px;
