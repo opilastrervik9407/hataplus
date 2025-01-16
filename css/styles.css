@@ -64,7 +64,7 @@ ul {
     transition: all 0.5s ease;
 }
 
-.nav-menu :hover {
+.nav-menu li:hover a {
     color: #fd8300;
     transition: all 0.5s ease;
 }
@@ -82,7 +82,6 @@ ul {
 .header_nav {
     display: flex;
     align-items: center;
-    text-align: center;
     max-width: 960px;
     margin: 0 auto;
 }
@@ -252,7 +251,8 @@ p.text {
     margin-bottom: 21px;
 }
 
-.campanie a {
+.campanie a,
+.rules a {
     font-size: 14px;
     line-height: 24px;
     text-decoration: underline;
@@ -261,7 +261,8 @@ p.text {
     font-family: "Arial";
 }
 
-.campanie a:hover{
+.campanie a,
+.rules a:hover {
     color: #666666;
     text-decoration: underline;
 }
@@ -280,8 +281,8 @@ p.text {
     line-height: 1.3em;
 }
 
-.houses p{
-margin-bottom: 5px;
+.houses p {
+    margin-bottom: 5px;
 }
 
 .populare p {
@@ -297,7 +298,7 @@ margin-bottom: 5px;
     font-family: "Arial";
 }
 
-.populas_project{
+.populas_project {
     color: #24242b;
     font-family: "Roboto Slab";
     font-weight: 700;
@@ -308,8 +309,15 @@ figcaption {
     position: relative;
 }
 
-figcaption img{
+figcaption img {
     transition: all 0.5s ease;
+}
+
+.text-price p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    font-family: "Arial";
 }
 
 figcaption a {
@@ -325,7 +333,7 @@ figcaption>a:hover~picture img {
     transform: scale(1.1);
 }
 
-figcaption>a:hover~h2{
+figcaption>a:hover~h2 {
     text-decoration: underline;
 }
 
@@ -346,23 +354,89 @@ figcaption>a:hover~h2{
     text-align: right;
 }
 
- .numberito::before{
+.numberito::before {
     content: "";
     position: absolute;
     width: 2px;
     height: 51px;
     background-color: #e4e4ec;
     right: -30px;
- }
+}
 
-.number1 a{
+.number1 a {
     font-size: 16px;
     line-height: 24px;
     color: #25252c;
     font-family: "Arial";
 }
 
-.contactphone2{
+table {
+    overflow: hidden;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 3px;
+}
+
+thead {
+    background-color: #1f1f56;
+}
+
+th {
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    padding: 6px;
+}
+
+td+td {
+    border-left: 1px solid #cdcddd;
+}
+
+thead tr:first-child th+th,
+thead tr th {
+    border-left: 1px solid #274569;
+}
+
+thead tr+tr {
+    border-top: 1px solid #274569;
+}
+
+tbody td:last-child {
+    text-align: right;
+}
+
+td {
+    color: #666666;
+    font-family: "Arial";
+    padding: 12.50px;
+    text-align: center;
+}
+
+td:first-child {
+    text-align: left;
+}
+
+tr+tr {
+    border-top: 1px solid #cdcddd;
+}
+
+tbody tr {
+    background-color: #e4e4ec;
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background-color: #fd8300;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+tbody tr:hover td {
+    color: #ffffff;
+}
+
+.contactphone2 {
     text-decoration: underline;
 }
 
@@ -433,12 +507,12 @@ figcaption>a:hover~h2{
     background-position: -76px -2px;
 }
 
-.catogoria  {
+.catogoria {
     border-radius: 0px 0px 3px 3px;
     overflow: hidden;
 }
 
-.title-menu p{
+.title-menu p {
     border-radius: 3px 3px 0px 0px;
 }
 
@@ -496,11 +570,7 @@ figcaption>a:hover~h2{
     transform: translateY(-50%) rotate(135deg);
 }
 
-.catogoria img {
-    display: flex;
-}
-
-.catogoria li +li{
+.catogoria li+li {
     border-top: 1px solid #e4e4ec;
 }
 
@@ -510,7 +580,13 @@ figcaption>a:hover~h2{
     line-height: 1.7em;
     color: #25252c;
     font-family: "Arial";
-   min-height: 45px;
+    min-height: 45px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .title-menu {
@@ -518,13 +594,14 @@ figcaption>a:hover~h2{
     justify-content: flex-end;
 }
 
+.hiddenmenu2,
+.hiddenmenu3,
 .hiddenmenu {
     display: none;
-    width: 100%;
-
+    /* width: 100%; */
 }
 
-.hiddenmenu li :hover {
+.hiddenmenu li:hover {
     background-color: #cecedd;
     color: #666666;
     transition: all 0.5s ease;
@@ -539,11 +616,45 @@ figcaption>a:hover~h2{
 
 .hiddenmenu a {
     padding-left: 30px;
-    color: #666666;
+    color: #666;
+}
+
+.menu_items,
+.dog{
+    position: relative;
+}
+
+.hiddenmenu2,
+.hiddenmenu3 {
+    position: absolute;
+    left: -2px;
+    min-width: 125px;
+    border-radius: 3px;
+    background-color: #e4e4ec;
+}
+
+.hiddenmenu2 a,
+.hiddenmenu3 a {
+    display: block;
+    padding: 3px 9px 3px 11px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 2em;
+    color: #25252c;
     border-top: none;
 }
 
+.hiddenmenu3 {
+    left: calc(100% + 5px);
+    top: 0;
+}
+
 .catogoria li:hover>.hiddenmenu {
+    display: block;
+}
+
+.menu_items:hover>.hiddenmenu2,
+.dog:hover>.hiddenmenu3 {
     display: block;
 }
 
@@ -554,7 +665,7 @@ figcaption>a:hover~h2{
     justify-content: space-around;
 }
 
-.block_menu a:hover{
+.block_menu a:hover {
     color: #fd8300;
     text-decoration: underline;
     transition: all 0.5s ease;
@@ -634,12 +745,12 @@ figcaption>a:hover~h2{
     background-color: #dcdce6;
 }
 
-.mail a:hover{
+.mail a:hover {
     color: #fd8300;
     transition: all 0.5s ease;
 }
 
-.skype a:hover{
+.skype a:hover {
     color: #fd8300;
     transition: all 0.5s ease;
 }
