@@ -34,6 +34,7 @@
 
 body {
     margin: 0;
+    font-family: "Roboto Slab";
 }
 
 hr {
@@ -64,8 +65,8 @@ ul {
     transition: all 0.5s ease;
 }
 
-.nav-menu li:hover a {
-    color: #fd8300;
+.nav-menu li:hover a{
+    color: #ffffff;
     transition: all 0.5s ease;
 }
 
@@ -197,8 +198,6 @@ a.in:hover {
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
-    font-family: "Roboto Slab"
-
 }
 
 p.text {
@@ -235,12 +234,10 @@ p.text {
     line-height: 24px;
     color: #24242b;
     font-weight: 700;
-    font-family: "Roboto Slab";
 }
 
 .campanie {
     color: #24242b;
-    font-family: "Roboto Slab";
 }
 
 .campanie p {
@@ -300,7 +297,6 @@ p.text {
 
 .populas_project {
     color: #24242b;
-    font-family: "Roboto Slab";
     font-weight: 700;
     padding-bottom: 24px;
 }
@@ -341,7 +337,6 @@ figcaption>a:hover~h2 {
     line-height: 24px;
     color: #24242b;
     font-weight: 700;
-    font-family: "Roboto Slab";
 }
 
 .main-parent {
@@ -385,7 +380,6 @@ th {
     line-height: 24px;
     color: #ffffff;
     font-weight: 700;
-    font-family: "Roboto Slab";
     padding: 6px;
 }
 
@@ -523,7 +517,6 @@ tbody tr:hover td {
     font-size: 16px;
     line-height: 1.5em;
     font-weight: 700;
-    font-family: "Roboto Slab";
     text-align: left;
     transition: all 0.5s ease;
 }
@@ -574,6 +567,10 @@ tbody tr:hover td {
     border-top: 1px solid #e4e4ec;
 }
 
+.menu_items li{
+    border-top:1px solid #e4e4ec;
+}
+
 .catogoria {
     min-width: 220px;
     font-size: 14px;
@@ -622,6 +619,13 @@ tbody tr:hover td {
 .menu_items,
 .dog{
     position: relative;
+}
+
+.hiddenmenu2 :hover,
+.hiddenmenu3 :hover{
+    border-radius: 3px;
+    background-color: #fd8300;
+    color: #ffffff;
 }
 
 .hiddenmenu2,
