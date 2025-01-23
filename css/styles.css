@@ -181,6 +181,10 @@ a.in:hover {
     color: #ffffff;
 }
 
+.dog-booths{
+    position: relative;
+}
+
 .backround {
     background: url(../img/backround.webp) no-repeat center/cover;
     width: 100%;
