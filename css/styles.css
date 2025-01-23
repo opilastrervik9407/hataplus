@@ -621,12 +621,12 @@ tbody tr:hover td {
 }
 
 .menu_items,
-.dog{
+.dog-booths{
     position: relative;
 }
 
-.hiddenmenu2 :hover,
-.hiddenmenu3 :hover{
+.hiddenmenu2:hover,
+.hiddenmenu3:hover{
     border-radius: 3px;
     background-color: #fd8300;
     color: #ffffff;
@@ -662,7 +662,7 @@ tbody tr:hover td {
 }
 
 .menu_items:hover>.hiddenmenu2,
-.dog:hover>.hiddenmenu3 {
+.dog-booths:hover>.hiddenmenu3 {
     display: block;
 }
 
