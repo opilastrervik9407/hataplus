@@ -108,6 +108,7 @@ header {
     padding: 0px;
     display: flex;
     align-items: center;
+    padding: 10px 0;
 }
 
 .nav-menu a {
@@ -594,7 +595,7 @@ tbody tr:hover td {
 }
 
 .menu_items li{
-    border-top:1px solid #e4e4ec;
+    border: 1px solid #e4e4ec;
 }
 
 .catogoria {
@@ -667,7 +668,7 @@ display: block;
 
  .hiddenmenu2::before{
     content:"";
-    position: absolute;
+    position:absolute;
     top: -5px;
     left: 0;
     width: 100%;
@@ -726,6 +727,15 @@ display: block;
     border-right: 1.5px solid #666666;
     transform: translateY(-50%) rotate(45deg);
     transition: all 0.5s ease;
+}
+
+.menu_items {
+	display: table;
+}
+
+.hiddenmenu2:hover,
+.hiddenmenu3:hover{
+	display: table-row;
 }
 
 
