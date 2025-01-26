@@ -643,6 +643,10 @@ display: block;
     position: relative;
 }
 
+.menu_items li{
+    border-bottom: 1px solid #cecedd;
+}
+
 .hiddenmenu li:hover {
     background-color: #cecedd;
     color: #666666;
@@ -709,6 +713,10 @@ display: block;
     min-width: 125px;
     border-radius: 3px;
     background-color: #e4e4ec;
+}
+
+.hiddenmenu3 a:hover{
+    color: #ffffff;
 }
 
 .hiddenmenu2 >li>a {
