@@ -108,7 +108,6 @@ header {
     padding: 0px;
     display: flex;
     align-items: center;
-    padding: 10px 0;
 }
 
 .nav-menu a {
@@ -643,8 +642,8 @@ display: block;
     position: relative;
 }
 
-.menu_items li{
-    border-bottom: 1px solid #cecedd;
+.menu_items li+li{
+    border-top: 1px solid #cecedd;
 }
 
 .hiddenmenu li:hover {
@@ -654,20 +653,9 @@ display: block;
 }
 
 .hiddenmenu2{
-    display: none;
-}
-
-.menu_items > li{
-    position: relative;
-}
-
-.menu_items > li:hover > .hiddenmenu2{
-    display: block;
     position: absolute;
     top: calc(100% + 5px);
     left: 0;
-    width: 100%;
-    padding-left: 10px;
 }
 
  .hiddenmenu2::before{
@@ -678,6 +666,22 @@ display: block;
     width: 100%;
     border-top: 5px solid transparent;
  }
+
+ .hiddenmenu3{
+    position: absolute;
+    left: calc(100% + 5px);
+    top: 0;
+ }
+
+ .hiddenmenu3::before{
+    content:"";
+    position: absolute;
+    left:-5px;
+    top: 0;
+    height: 100%;
+    border-left: 5px solid transparent;
+ }
+
 .parent-sub li+li {
     border: none;
     padding: 0;
@@ -697,9 +701,12 @@ display: block;
 
 .hiddenmenu2 li:hover,
 .hiddenmenu3 li:hover{
-    border-radius: 3px;
     background-color: #fd8300;
     color: #ffffff;
+}
+
+.hiddenmenu2 li:first-child{
+    border-radius:3px 3px 0 0;
 }
 
 .hiddenmenu2 li{
@@ -709,7 +716,6 @@ display: block;
 .hiddenmenu2,
 .hiddenmenu3 {
     position: absolute;
-    left: -2px;
     min-width: 125px;
     border-radius: 3px;
     background-color: #e4e4ec;
@@ -737,15 +743,9 @@ display: block;
     transition: all 0.5s ease;
 }
 
-.menu_items {
-	display: table;
+.menu_items{
+    padding: 10px 0;
 }
-
-.hiddenmenu2:hover,
-.hiddenmenu3:hover{
-	display: table-row;
-}
-
 
 .hiddenmenu2>li:hover>a {
     background-color: #fd8300;
@@ -775,15 +775,16 @@ display: block;
 
 .hiddenmenu2 a,
 .hiddenmenu3 a{
-letter-spacing: 2px;
-line-height: 24px;
-color: #25252c;
-font-family: "Arial";
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #25252c;
+    font-family: "Arial";
 }
 
 .hiddenmenu3 {
     left: calc(100% + 5px);
     top: 0;
+    left: -10;
 }
 
 .catogoria li:hover>.hiddenmenu {
