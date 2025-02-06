@@ -682,6 +682,10 @@ display: block;
     border-left: 5px solid transparent;
  }
 
+ .hiddenmenu2 li:first-child:hover{
+   border-radius: 3px 3px 0px 0px;
+ }
+
 .parent-sub li+li {
     border: none;
     padding: 0;
